@@ -38,8 +38,10 @@ public class CarDemo {
         System.out.println("After hitting the brake the speed of the first car is " + car1.getSpeed() + " mph");
         System.out.println();
 
-        System.out.println("************ Reference Variables");
-
+        System.out.println("************ Reference Variables ************");
+        Car car3 = car2;
+        System.out.println("The color of the second car is " + car2.getColor());
+        System.out.println("The color of the third car is " + car3.getColor());
 
     }
 }
