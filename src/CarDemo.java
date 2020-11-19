@@ -1,3 +1,5 @@
+import java.lang.ref.Reference;
+
 public class CarDemo {
     public static void main(String[] args) {
 
@@ -27,9 +29,17 @@ public class CarDemo {
         System.out.println("************ Invoking getColor() method ************");
         System.out.println("The color of the first car is " + car1.getColor() +
                 "and the color of the second car is " + car2.getColor());
+        System.out.println();
 
         System.out.println("************ Invoking methods in Car class ************");
         car1.accel(65.0);
-        System.out.println("The first car is going with speed of " );
+        System.out.println("The first car is going with speed of " + car1.getSpeed() + " mph");
+        car1.brake();
+        System.out.println("After hitting the brake the speed of the first car is " + car1.getSpeed() + " mph");
+        System.out.println();
+
+        System.out.println("************ Reference Variables");
+
+
     }
 }
